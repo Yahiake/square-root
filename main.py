@@ -1,12 +1,10 @@
 while True:
-    i = float(input("\nEnter a number : "))
+    i = float(input("Enter a number : "))
     i = i**(1/2)
-    print("\nYour square root number is : ", i, "\n")
+    print(f"Your square root number is: {i}")
     check = str(input("Do you want to quit or start again? enter Y to restart or another key to end: "))
-    if check == "y":
-        continue
-    elif check == "Y":
+    if check in ["y", "Y"]:
         continue
     else:
-        print("\nGoodbye!")
+        print("Goodbye!")
         exit()
